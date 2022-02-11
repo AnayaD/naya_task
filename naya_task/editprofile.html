@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row header1" >
+            <div class="col-1" style="color: #5714ac;text-align: center;font-weight: bold; line-height: 7vh; vertical-align: middle;font-size: 25px; padding: 0px 30px 0px 30px;">Infotainly</div>
+            <div class="col-2 offset-9">
+                <img src="../naya_task/pictures/unknownuser.jpg" style="height: 7vh; border-radius: 50%;" alt="user photo">
+            </div>
+
+        </div>
+
+        <div class="row headerr2" style="color: #000; text-align: center;font-weight: bold; line-height: 8vh; vertical-align: middle;font-size: 17px;">
+            <div class="col-2 offset-3">
+                Edit profile
+            </div>
+
+        </div>
+
+        <form class="login_form"   method="post" name="form" onsubmit="return validated()">
+
+        
+            <div class="container-fluid cont">
+                <div class="row" style="height: 100vh;">
+                    <div class="col-4 offset-4" style="justify-content: center;">
+                        <div class="container-fluid">
+                            
+                            
+                            <div class="row" style="height: 120vh; border-radius: 5px; background-color: #ffffff;justify-content: center;align-items: center;display: flex;">
+                                <div class="col-10 offset-1 login">
+                                    <div class="row" style="height: 10vh; line-height: 10vh; width: 100%; align-items: center; vertical-align:middle;">
+                                        <div class="col-6 offset-3" style="color: #5714ac ;font-size: 25px; font-weight: bold;">Infotainly</div>
+                                    </div>
+                                    <div class="row" style="height: 70vh;width: 100%;">
+                                        <div class="font">Change profile picture</div>
+                                        <img src="../naya_task/pictures/unknownuser.jpg" alt="profile picture" style="height: 20vh;">
+                                        <div class="font">Name</div>                                   
+                                        <input autocomplete="off" type="text" name="name" placeholder="Name & Surname">
+                                        <div class="font">Email</div>
+                                        <input autocomplete="off" type="text" name="email" placeholder="Email-id">
+                                        <div id="email_error">Please enter valid email-id</div>
+                                        <div class="font">Change Password <br><br>Enter current password</div>
+                                        <br><br>
+                                        <input type="password" name="password" placeholder="Password">
+                                        <div id="pass_error">Please enter valid Password</div>
+                                        <div class="font">New Password</div>
+                                        <input type="password" name="password" placeholder="Set new password">
+                                        <div class="font">Confirm new password</div>
+                                        <input type="password" name="password" placeholder="Re-enter Password">
+                                        <button type="submit" id = "sub_btn">Save changes</button>
+                                        <a href="login.html" target="_blank">Sign out</a>
+                            
+                                    </div>
+        
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+        
+                    </form>
+                    </div>
+                    
+                </div>
+            </div>	
+            <script src="login.js"></script>
+        
+        </form>
+
+    </div>
+
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

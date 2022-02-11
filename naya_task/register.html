@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="loginstyles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<form class="login_form"   method="post" name="form" onsubmit="return validated()">
+
+<body>
+	<div class="container-fluid cont">
+		<div class="row" style="height: 100vh;">
+			<div class="col-4 offset-4" style="justify-content: center;">
+				<div class="container-fluid">
+					<div class="row" style="height: 20vh;justify-content: center;align-items: center;">
+					</div>
+					<div class="row" style="height: 65vh; border-radius: 5px; background-color: #ffffff;justify-content: center;align-items: center;display: flex;">
+						<div class="col-10 offset-1 login">
+							<div class="row" style="height: 10vh; line-height: 10vh; width: 100%; align-items: center; vertical-align:middle;">
+								<div class="col-6 offset-3" style="color: #5714ac ;font-size: 25px; font-weight: bold;">Infotainly</div>
+							</div>
+							<div class="row" style="height: 40vh;width: 100%;">
+                                    <div class="font">Name</div>                                   
+                                    <input autocomplete="off" type="text" name="name" placeholder="Name & Surname">
+									<div class="font">Email</div>
+									<input autocomplete="off" type="text" name="email" placeholder="Email-id">
+									<div id="email_error">Please enter valid email-id</div>
+									<div class="font">Set Password</div>
+									<input type="password" name="password" placeholder="Password">
+									<!--<div id="pass_error">Please enter valid Password</div>-->
+                                    <div class="font">Confirm Password</div>
+									<input type="password" name="password" placeholder="Re-enter Password">
+									<button type="submit" id = "sub_btn">Sign up</button>
+                                    <a href="login.html" target="_blank">Already have an account? Sign in here</a>
+
+							</div>
+
+							
+						</div>
+						
+					</div>
+
+				</div>
+
+			</form>
+			</div>
+			
+		</div>
+	</div>	
+	<script src="login.js"></script>
+</body>
+</form>
+
+</html>
